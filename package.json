@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "esbuild": "^0.19.11",
+    "monaco-editor-workers": "^0.36.0",
+    "monaco-languageclient": "^5.0.0"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/esbuild ./files/index.js --bundle --outfile=files/compiled/bundle.js --loader:.ttf=file"
+  }
+}
